@@ -9,10 +9,24 @@
             name="description"
             content="Personal portfolio and brand website of Amitai Zand - Flying Colors Web Studio"
         />
-        <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
         <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
         <title>Flying Colors Web Studio</title>
     </head>
+    <!-- Google tag (gtag.js) -->
+    <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-7GTX9QMPQS"
+    ></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+
+        gtag("config", "G-7GTX9QMPQS");
+    </script>
+    <!-- End Google Analytics -->
     <body>
         <noscript>You need to enable JavaScript to run this app.</noscript>
         <div id="root"></div>
