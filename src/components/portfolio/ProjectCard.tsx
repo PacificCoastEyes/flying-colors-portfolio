@@ -1,6 +1,10 @@
 import { Card } from "react-bootstrap";
 import "../../styles/portfolio/ProjectCard.css";
 import { Project } from "../../lib/projects";
+import FlyingColorsScreenshot from "../../img/flying_colors_screenshot.jpeg";
+import DermaDetectScreenshot from "../../img/derma_detect.jpeg";
+import ThePetHavenScreenshot from "../../img/the_pet_haven.png";
+import LuraScreenshot from "../../img/lura.jpeg";
 
 function ProjectCard({
     externalLink,
@@ -23,11 +27,30 @@ function ProjectCard({
                 <Card.Header>
                     <Card.Title className="fw-bold my-2">{title}</Card.Title>
                 </Card.Header>
-                <img
-                    src={"/images/" + photo}
-                    alt={`Screenshot of ${title}`}
-                ></img>
-
+                {name === "flying-colors" && (
+                    <img
+                        src={FlyingColorsScreenshot}
+                        alt={`Screenshot of ${title}`}
+                    ></img>
+                )}
+                {name === "myderma-annotation-tool" && (
+                    <img
+                        src={DermaDetectScreenshot}
+                        alt={`Screenshot of ${title}`}
+                    ></img>
+                )}
+                {name === "the-pet-haven" && (
+                    <img
+                        src={ThePetHavenScreenshot}
+                        alt={`Screenshot of ${title}`}
+                    ></img>
+                )}
+                {name === "lura" && (
+                    <img
+                        src={LuraScreenshot}
+                        alt={`Screenshot of ${title}`}
+                    ></img>
+                )}
                 <Card.Body>
                     <Card.Text>{description}</Card.Text>
                     {client && (
