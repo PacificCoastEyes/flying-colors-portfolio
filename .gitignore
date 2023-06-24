@@ -7,10 +7,6 @@
 /.pnp
 .pnp.js
 
-# images
-
-/src/img
-
 # testing
 /coverage
 
