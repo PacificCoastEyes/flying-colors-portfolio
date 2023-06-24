@@ -24,7 +24,7 @@ function ProjectCard({
                     <Card.Title className="fw-bold my-2">{title}</Card.Title>
                 </Card.Header>
                 <img
-                    src={require(`../../images/${photo}`)}
+                    src={require("../../images/" + photo)}
                     alt={`Screenshot of ${title}`}
                 ></img>
 
