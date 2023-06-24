@@ -4,19 +4,19 @@
 }
 
 #page-banner-about {
-    background-image: url("./../../../public/images/trees.jpg");
+    background-image: url("../../img/trees.jpg");
     background-size: 50%;
 }
 
 #page-banner-contact {
-    background-image: url("./../../../public/images/payphones.jpg");
+    background-image: url("../../img/payphones.jpg");
     background-position-x: 200px;
     background-position-y: 40%;
     background-size: 70%;
 }
 
 #page-banner-portfolio {
-    background-image: url("./../../../public/images/buildings.jpg");
+    background-image: url("../../img/buildings.jpg");
     background-position-y: 45%;
 }
 
