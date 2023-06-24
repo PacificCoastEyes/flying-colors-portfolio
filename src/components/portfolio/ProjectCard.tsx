@@ -1,10 +1,6 @@
 import { Card } from "react-bootstrap";
 import "../../styles/portfolio/ProjectCard.css";
 import { Project } from "../../lib/projects";
-import FlyingColorsScreenshot from "../../images/flying_colors_screenshot.jpeg";
-import DermaDetectScreenshot from "../../images/derma_detect.jpeg";
-import ThePetHavenScreenshot from "../../images/the_pet_haven.png";
-import LuraScreenshot from "../../images/lura.jpeg";
 
 function ProjectCard({
     externalLink,
@@ -16,27 +12,6 @@ function ProjectCard({
     frontEnd,
     backEnd,
 }: Project) {
-    function assignPhotoPath(): string {
-        let photoPath: string = "";
-        switch (photo) {
-            case "flying_colors_screenshot.jpeg":
-                photoPath = FlyingColorsScreenshot;
-                break;
-            case "derma_detect.jpeg":
-                photoPath = DermaDetectScreenshot;
-                break;
-            case "the_pet_haven.png":
-                photoPath = ThePetHavenScreenshot;
-                break;
-            case "lura.jpeg":
-                photoPath = LuraScreenshot;
-                break;
-            default:
-                break;
-        }
-        return photoPath;
-    }
-
     return (
         <a
             href={externalLink ? externalLink : "#"}
@@ -49,7 +24,7 @@ function ProjectCard({
                     <Card.Title className="fw-bold my-2">{title}</Card.Title>
                 </Card.Header>
                 <img
-                    src={assignPhotoPath()}
+                    src={"/images/" + photo}
                     alt={`Screenshot of ${title}`}
                 ></img>
 

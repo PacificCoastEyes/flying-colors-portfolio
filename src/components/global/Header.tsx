@@ -1,6 +1,5 @@
 import { Navbar, Offcanvas } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import Logo from "../../images/logo.png";
 import "../../styles/global/Header.css";
 
 function Header() {
@@ -10,7 +9,11 @@ function Header() {
             className="w-100 d-flex justify-content-between align-items-center px-5"
         >
             <Link to="/">
-                <img id="logo" src={Logo} alt="Flying Color Web Studios logo" />
+                <img
+                    id="logo"
+                    src="/images/logo.png"
+                    alt="Flying Color Web Studios logo"
+                />
             </Link>
             <Navbar collapseOnSelect expand="md">
                 <Navbar.Toggle />
