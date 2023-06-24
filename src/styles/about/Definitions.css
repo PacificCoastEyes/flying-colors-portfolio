@@ -1,0 +1,18 @@
+#definitions {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    border-bottom: 2px dotted black;
+}
+
+.definition-word {
+    font-style: italic;
+}
+
+@media screen and (max-width: 768px) {
+    #definitions {
+        flex-direction: column;
+    }
+
+    .definition:first-child {
+        margin-bottom: 20px;
+    }
+}

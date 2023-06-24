@@ -1,0 +1,67 @@
+.skillset {
+    margin-left: 40px;
+    padding: 10px 60px 10px 20px;
+    transform: skew(-15deg);
+    border-radius: 10px;
+}
+
+.skillset h3,
+.skill-list {
+    transform: skew(15deg);
+}
+
+.skill-list {
+    margin-left: 30px;
+}
+
+#front-end {
+    background-color: var(--bs-red);
+    color: white;
+}
+
+#back-end {
+    background-color: var(--bs-yellow);
+}
+
+#cloud-saas-other {
+    background-color: var(--bs-blue);
+    color: white;
+}
+
+@media screen and (max-width: 1000px) {
+    #skills h2 {
+        margin-left: initial !important;
+    }
+
+    #skillsets {
+        flex-direction: column;
+    }
+
+    .skillset,
+    .skill-list {
+        margin-left: initial;
+    }
+
+    .skillset,
+    .skillset h3,
+    .skill-list {
+        transform: initial;
+    }
+
+    .skillset {
+        padding: 10px 20px;
+    }
+
+    .skillset:not(:first-child) {
+        margin-top: 10px;
+    }
+
+    .skill-list {
+        max-height: 125px;
+        columns: 2;
+    }
+
+    .skill-list li {
+        width: 50%;
+    }
+}

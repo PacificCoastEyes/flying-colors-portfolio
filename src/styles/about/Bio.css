@@ -1,0 +1,25 @@
+#bio p {
+    font-size: 1.2em;
+}
+
+#bio a:hover {
+    text-decoration: underline;
+}
+
+#headshot {
+    width: 150px;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    #bio-text-wrapper {
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #headshot {
+        width: 75px;
+        border: 2px solid var(--bs-blue);
+    }
+}

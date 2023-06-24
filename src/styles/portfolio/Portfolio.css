@@ -1,0 +1,7 @@
+@media screen and (max-width: 1000px) {
+    #project-cards-container {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+}

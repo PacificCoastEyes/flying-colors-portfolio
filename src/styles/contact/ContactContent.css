@@ -1,0 +1,91 @@
+#contact-content {
+    width: 70%;
+    margin: 0 auto;
+}
+
+#contact-content a:hover {
+    text-decoration: underline;
+}
+
+#contact-linkedin {
+    padding-bottom: 20px;
+    border-bottom: 2px dotted black;
+}
+
+#contact-form {
+    padding-top: 10px;
+}
+
+.form-control:focus {
+    border: none;
+    box-shadow: 0 0 0 0.25rem rgba(255, 199, 54, 0.5) !important;
+}
+
+.react-tel-input input,
+.react-tel-input span {
+    width: 100% !important;
+    font-family: "Quicksand", Arial, Helvetica, sans-serif;
+}
+
+.react-tel-input input {
+    border-color: var(--bs-border-color) !important;
+}
+
+.react-tel-input input:focus {
+    border: none;
+}
+
+#message {
+    resize: none;
+    height: 100%;
+}
+
+.alert {
+    padding: 5px 10px !important;
+    margin-bottom: 0 !important;
+    margin-right: 16px !important;
+    text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+    #contact-form-body {
+        flex-direction: column;
+    }
+
+    #contact-form-body-left,
+    #contact-form-body-right {
+        width: initial !important;
+    }
+
+    #contact-form-body-right {
+        margin-left: initial !important;
+        margin-top: 16px;
+    }
+
+    #message {
+        height: 200px;
+    }
+
+    button[type="submit"] {
+        height: initial;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #contact-content {
+        width: 90%;
+        padding: 20px 10px !important;
+    }
+
+    #contact-linkedin h4 {
+        font-size: 1.1em;
+    }
+
+    #contact-form-footer {
+        flex-direction: column-reverse;
+    }
+
+    .alert {
+        margin-top: 16px !important;
+    }
+}

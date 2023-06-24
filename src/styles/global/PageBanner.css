@@ -1,0 +1,58 @@
+.page-banner {
+    height: 100px;
+    background-size: cover;
+}
+
+#page-banner-about {
+    background-image: url("../../images/trees.jpg");
+    background-size: 50%;
+}
+
+#page-banner-contact {
+    background-image: url("../../images/payphones.jpg");
+    background-position-x: 200px;
+    background-position-y: 40%;
+    background-size: 70%;
+}
+
+#page-banner-portfolio {
+    background-image: url("../../images/buildings.jpg");
+    background-position-y: 45%;
+}
+
+.page-banner-text-container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: fit-content;
+    padding: 0 50px 0 100px;
+    transform: skew(-45deg) translateX(-50px);
+}
+
+.page-banner-text {
+    transform: skew(45deg);
+}
+
+.page-banner-text h1 {
+    font-weight: bold;
+}
+
+#page-banner-text-container-about {
+    background-color: var(--bs-yellow);
+}
+
+#page-banner-text-container-contact {
+    background-color: var(--bs-blue);
+    color: white;
+}
+
+#page-banner-text-container-portfolio {
+    background-color: var(--bs-red);
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    .page-banner {
+        height: 75px;
+    }
+}

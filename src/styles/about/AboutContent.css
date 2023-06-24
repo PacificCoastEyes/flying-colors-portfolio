@@ -1,0 +1,12 @@
+#about-content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+    #about-content {
+        width: 90%;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+}

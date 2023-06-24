@@ -1,0 +1,18 @@
+.project-card {
+    max-width: 400px;
+    height: max-content;
+    box-shadow: 0 0 5px 1px #ccc;
+}
+
+.card-header {
+    background-color: var(--bs-yellow) !important;
+    border-bottom: 1px solid #888 !important;
+}
+
+.project-card:hover {
+    box-shadow: 0 0 5px 1px #aaa;
+}
+
+.no-link:hover {
+    cursor: initial;
+}

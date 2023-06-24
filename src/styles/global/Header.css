@@ -1,0 +1,72 @@
+#logo {
+    height: 65px;
+}
+.nav-btn {
+    padding: 5px 20px;
+    border-radius: 5px;
+    transform: skew(-45deg);
+    font-weight: bold;
+}
+
+.nav-btn:hover {
+    cursor: pointer !important;
+}
+
+#nav-btn-portfolio {
+    background-color: var(--bs-red);
+    color: white;
+}
+#nav-btn-about {
+    background-color: var(--bs-yellow);
+}
+#nav-btn-contact {
+    background-color: var(--bs-blue);
+    color: white;
+}
+
+.nav-btn-text {
+    transform: skew(45deg);
+}
+
+@media screen and (min-width: 768px) {
+    #navbar-offcanvas {
+        flex-direction: row;
+    }
+
+    #navbar-offcanvas-title {
+        display: none;
+    }
+
+    .nav-btn {
+        transition: transform 0.25s ease;
+    }
+
+    .nav-btn:hover {
+        transform: translateX(5px) translateY(-5px) skew(-45deg);
+        filter: drop-shadow(0 5px 5px #ddd);
+    }
+
+    .nav-btn-link:not(:first-child) {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #navbar-offcanvas {
+        align-items: center;
+    }
+
+    #navbar-offcanvas-title {
+        font-weight: bold;
+        margin: 10px 0;
+    }
+
+    .nav-btn-link {
+        width: 60%;
+        margin: 10px 0;
+    }
+
+    .nav-btn-text {
+        text-align: center;
+    }
+}
