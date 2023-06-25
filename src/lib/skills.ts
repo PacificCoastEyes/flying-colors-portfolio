@@ -97,12 +97,8 @@ export const skillset: SkillSet = [
                 label: "Microsoft Azure",
             },
             {
-                name: "google-cloud",
-                label: "Google Cloud",
-            },
-            {
-                name: "firebase",
-                label: "Firebase",
+                name: "google-cloud-firebase",
+                label: "Google Cloud + Firebase",
             },
             {
                 name: "vercel",
@@ -119,6 +115,10 @@ export const skillset: SkillSet = [
             {
                 name: "unit-testing",
                 label: "Unit Testing",
+            },
+            {
+                name: "wordpress",
+                label: "WordPress",
             },
             {
                 name: "adobe-cc",
