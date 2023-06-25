@@ -57,8 +57,9 @@
     }
 
     .skill-list {
-        max-height: 125px;
+        max-height: 150px;
         columns: 2;
+        column-gap: 20px;
     }
 
     .skill-list li {
