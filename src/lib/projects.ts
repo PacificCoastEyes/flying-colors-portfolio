@@ -115,7 +115,7 @@ export const projects: Project[] = [
         name: "lura",
         title: "LURA Consulting Construction Liaison Microsite",
         description:
-            "A webpage promototing LURA's services for infrastructure projects.",
+            "A webpage promoting LURA's services for infrastructure projects.",
         client: "LURA Consulting",
         frontEnd: [
             {
