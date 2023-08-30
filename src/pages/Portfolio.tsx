@@ -28,7 +28,6 @@ function Portfolio() {
                             <ProjectCard
                                 key={project.name}
                                 externalLink={project.externalLink}
-                                photo={project.photo}
                                 name={project.name}
                                 title={project.title}
                                 description={project.description}

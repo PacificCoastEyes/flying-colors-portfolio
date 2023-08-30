@@ -1,6 +1,7 @@
 import { Card } from "react-bootstrap";
 import "../../styles/portfolio/ProjectCard.css";
 import { Project } from "../../lib/projects";
+import MoahScreenshot from "../../img/moah_screenshot.jpeg";
 import FlyingColorsScreenshot from "../../img/flying_colors_screenshot.jpeg";
 import DermaDetectScreenshot from "../../img/derma_detect.jpeg";
 import ThePetHavenScreenshot from "../../img/the_pet_haven.png";
@@ -8,7 +9,6 @@ import LuraScreenshot from "../../img/lura.jpeg";
 
 function ProjectCard({
     externalLink,
-    photo,
     name,
     title,
     description,
@@ -27,6 +27,12 @@ function ProjectCard({
                 <Card.Header>
                     <Card.Title className="fw-bold my-2">{title}</Card.Title>
                 </Card.Header>
+                {name === "moah" && (
+                    <img
+                        src={MoahScreenshot}
+                        alt={`Screenshot of ${title}`}
+                    ></img>
+                )}
                 {name === "flying-colors" && (
                     <img
                         src={FlyingColorsScreenshot}

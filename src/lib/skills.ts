@@ -63,6 +63,14 @@ export const skillset: SkillSet = [
                 label: "Express",
             },
             {
+                name: "python",
+                label: "Python",
+            },
+            {
+                name: "flask",
+                label: "Flask",
+            },
+            {
                 name: "dotnet-core",
                 label: ".NET Core",
             },
@@ -107,10 +115,6 @@ export const skillset: SkillSet = [
             {
                 name: "git",
                 label: "Git",
-            },
-            {
-                name: "python",
-                label: "Python",
             },
             {
                 name: "unit-testing",

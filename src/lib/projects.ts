@@ -1,6 +1,5 @@
 export interface Project {
     externalLink?: string;
-    photo: string;
     name: string;
     title: string;
     description: string;
@@ -17,8 +16,24 @@ export interface Project {
 
 export const projects: Project[] = [
     {
+        externalLink: "https://brave-water-053e78e03.3.azurestaticapps.net",
+        name: "moah",
+        title: "Moah Mental Health App",
+        description:
+            "A simple app for breath meditation, soundscape relaxation, and inspirational quotes.",
+        frontEnd: [
+            {
+                name: "react-typescript",
+                label: "React (TypeScript)",
+            },
+            {
+                name: "material-ui",
+                label: "Material UI",
+            },
+        ],
+    },
+    {
         externalLink: "/",
-        photo: "flying_colors_screenshot.jpeg",
         name: "flying-colors",
         title: "Flying Colors Web Studio",
         description:
@@ -45,7 +60,6 @@ export const projects: Project[] = [
         ],
     },
     {
-        photo: "derma_detect.jpeg",
         name: "myderma-annotation-tool",
         title: "MyDerma Annotation Tool",
         description:
@@ -78,7 +92,6 @@ export const projects: Project[] = [
     },
     {
         externalLink: "https://nice-ground-05b767403.2.azurestaticapps.net/",
-        photo: "the_pet_haven.png",
         name: "the-pet-haven",
         title: "The Pet Haven",
         description:
@@ -111,7 +124,6 @@ export const projects: Project[] = [
     },
     {
         externalLink: "https://constructionliaison.ca/",
-        photo: "lura.jpeg",
         name: "lura",
         title: "LURA Consulting Construction Liaison Microsite",
         description:
