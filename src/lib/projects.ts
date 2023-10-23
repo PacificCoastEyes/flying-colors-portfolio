@@ -20,7 +20,7 @@ export const projects: Project[] = [
         name: "moah",
         title: "Moah Mental Health App",
         description:
-            "A simple app for breath meditation, soundscape relaxation, and inspirational quotes.",
+            "A simple app for breath meditation, soundscape relaxation, inspirational quotes, and journaling.",
         frontEnd: [
             {
                 name: "react-typescript",
