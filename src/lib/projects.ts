@@ -31,6 +31,16 @@ export const projects: Project[] = [
                 label: "Material UI",
             },
         ],
+        backEnd: [
+            {
+                name: "dotnet-core",
+                label: ".NET Core",
+            },
+            {
+                name: "mongodb",
+                label: "MongoDB",
+            },
+        ],
     },
     {
         externalLink: "/",
